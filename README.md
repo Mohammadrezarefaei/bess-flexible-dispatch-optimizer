@@ -35,4 +35,15 @@ bess-flexible-dispatch-optimizer/
 ├── LICENSE
 ├── README.md
 └── requirements.txt
+---
 
+### Sample Fallback Market Data & Constraints (`market_prices_fallback.csv`)
+
+| Hour | Price (€/MWh) | Grid Limit (MW) | Description / Market Condition |
+| :--- | :--- | :--- | :--- |
+| **00:00** | 40.00 | 1.0 | Standard Base Load |
+| **05:00** | -15.00 | 1.0 | Early morning low demand / negative pricing |
+| **06:00** | -45.00 | 0.3 | Peak solar surge & strict grid congestion |
+| **07:00** | -20.00 | 0.1 | Severe bottleneck (Minimum export limit) |
+| **12:00** | 110.00 | 0.0 | Full grid curtailment (Zero export allowed) |
+| **19:00** | 150.00 | 1.0 | Evening peak demand window |
