@@ -8,7 +8,9 @@ The model addresses a critical modern challenge for IPPs: **Co-optimizing multi-
 ### Visualization
 The optimization engine successfully shifts charging cycles into negative-price windows and shapes multi-hour discharges around strict grid export bottlenecks:
 
-![BESS Optimization Animation](bess_dark_optimization.gif)
+<p align="center">
+  <img src="bess_dark_optimization.gif" width="100%" alt="BESS Optimization Animation">
+</p>
 
 ### Key Features
 * **Mixed-Integer Linear Programming (MILP):** Formulated using `PuLP` to ensure mathematically optimal dispatch schedules.
